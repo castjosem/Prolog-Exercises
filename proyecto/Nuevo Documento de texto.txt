@@ -1,0 +1,14 @@
+13
+29	27 Perro comer  hueso
+32	16 Perro comer  gato
+40	16 hueso comida 
+19	35 hueso comida 
+26	20 carne comida
+36	26 hombre comer carne
+10	27 Perro comer  carne
+21	37 Pajaro volar
+31	8  Bebe gatear
+27	11 Gato arañar
+6	29 Planta dan_fruto
+18	39 Planta dan_fruto
+25	19 Planta dan_fruto

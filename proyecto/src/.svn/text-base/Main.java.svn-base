@@ -1,0 +1,27 @@
+
+
+public class Main {
+
+    public static void main(String[] args) {        
+            Ambiente amb = new Ambiente(30);
+            /*
+            Object prueba;
+            Agente ag = new Agente();
+            Objeto obj = new Objeto();
+            prueba = obj;
+            System.out.println(prueba.getClass().getName()+"\t"+prueba.hashCode());
+            System.out.println(prueba.getClass().getName()+"\t"+prueba.hashCode());
+            Objeto aux = (Objeto) prueba;
+            System.out.println(aux.hashCode());
+            prueba = ag;
+            System.out.println(prueba.getClass().getName()+"\t"+prueba.hashCode());
+            //System.out.println(obj.getClass().getName());
+             *
+             *
+             */
+
+
+
+    }
+
+}

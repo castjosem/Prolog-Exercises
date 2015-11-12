@@ -1,0 +1,12 @@
+4
+0	0
+20	3
+15	4
+29	29
+6
+29	27	Perro
+28	27	Perro
+27	27	Pajaro
+27	28	Bebe
+27	20	Gato
+0	29	Planta

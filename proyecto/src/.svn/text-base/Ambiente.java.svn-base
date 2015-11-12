@@ -1,0 +1,60 @@
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Ambiente {
+    private int tamaño;
+    private Object[][] ambiente;
+    private LinkedList<Agente> agentes;
+    private LinkedList<Objeto> objetos;
+    private Coordenadas cord;
+
+    public Ambiente(int tamaño)
+    {
+        this.tamaño = tamaño;
+        ambiente = new Object[tamaño][tamaño];
+        agentes = new LinkedList<Agente>();
+        objetos = new LinkedList<Objeto>();
+
+        try {
+            Lectura();
+        } catch (FileNotFoundException ex) {}        
+    }
+
+    public void IA()
+    {
+        while(true)
+        {
+            for(int i=0 ; i<agentes.size(); i++)
+            {
+
+            }
+        }
+    }
+
+    private void Lectura() throws FileNotFoundException
+    {
+        Integer id = 1;
+        FileReader archivo = new FileReader("entrada.txt");
+        Scanner scan = new Scanner(archivo);
+        int cant_agentes = scan.nextInt();
+        for(int i=0 ; i<cant_agentes ; i++)
+        {
+            Agente nuevo_agente = new Agente(scan.nextInt(),scan.nextInt());
+            agentes.add(nuevo_agente);
+            ambiente[nuevo_agente.getX()][nuevo_agente.getY()] = nuevo_agente;
+        }
+
+        int cant_objetos = scan.nextInt();
+        for(int i=0 ; i<cant_objetos ; i++)
+        {
+            Objeto nuevo_objeto = new Objeto(id,scan.nextInt(),scan.nextInt(),scan.next());
+            objetos.add(nuevo_objeto);
+            ambiente[nuevo_objeto.getX()][nuevo_objeto.getY()] = nuevo_objeto;
+            id++;
+        }
+    }
+
+}
